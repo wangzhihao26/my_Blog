@@ -5,6 +5,7 @@ from django.urls import reverse
 import markdown
 from django.utils.html import strip_tags
 
+
 class Category(models.Model):
     """
     Django 要求模型必须继承 models.Model 类。
@@ -99,3 +100,5 @@ class Post(models.Model):
 
         # 调用父类的 save 方法将数据保存到数据库中
         super(Post, self).save(*args, **kwargs)
+
+
