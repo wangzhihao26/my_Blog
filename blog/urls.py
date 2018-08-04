@@ -10,6 +10,5 @@ urlpatterns = [
     re_path(r'^tag/(?P<pk>[0-9]+)/$', views.TagView.as_view(), name='tag'),
     re_path(r'^post/(?P<pk>[0-9]+)/$', views.PostDetailView.as_view(), name='detail'),
     re_path(r'^all/rss/$', AllPostsRssFeed(), name='rss'),
-    re_path(r'^search/$', views.search, name='search'),
 ]
 
